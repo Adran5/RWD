@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pet Adoption Application</title>
+  </head>
+  <body>
+    <h1>Apply to adopt a pet</h1>
+    <form method="get">
+      <label>Password
+      <input type="password" name="password">
+      </label>
+       <br /><br />
+      <label>Number
+      <input type="number" name="number">
+      </label>
+       <br /><br />
+      
+      <label>url
+      <input type="url" name="number">
+      </label>
+       <br /><br />
+      
+      <label>Email
+      <input type="email" name="number">
+      </label>
+       <br /><br />
+      
+      
+    <label>Range
+      <input type="range" name="number">
+      </label>
+       <br /><br />
+      
+      <label>Date
+      <input type="date" name="number">
+      </label>
+       <br /><br />
+      
+      <p></p>
+      <label> First Name: 
+        <input required placeholder="enter name" type="text" name="first-name">
+      </label>
+      <label> Last Name:
+        <input type="text" name="last-name">
+      </label>
+      <br /><br />
+      
+      <label> Have you had pets before?
+        <input type="text" name="question-1">
+      </label>
+      <br /><br />
+      <label> How many pets have you had?
+        <input type="text" name="question-2">
+      </label>
+    <br /><br />
+      
+    <label> Type of animal to adopt: 
+      <select name="animal">
+        <option value="" selected>Please Select</option>
+        <option value="turtle">Turtle</option>
+        <option value="python">Python</option>
+        <option value="dog">Dog</option>
+      </select>
+    </label>
+      <br /><br />
+    <label> How much outdoor space will your pet have to play in?
+      <textarea name="outdoor" cols="100" rows="15">Tons of space! A whole backyard!
+      </textarea>
+    </label>
+     <br /><br />
+    <fieldset> 
+      <legend>
+        Do you have other pets at home already?
+      </legend>
+        <label>Yes
+          <input type="radio" name="other-pets" value="yes">
+        </label>
+        <label>No
+        <input type="radio" name="other-pets" value="no">   
+        </label>
+    </fieldset>
+      <br /><br />
+     <fieldset> 
+      <legend>
+        Do you have other pets at home already?
+      </legend>
+        <label>Brown
+          <input type="checkbox" name="color" value="brown[]">
+        </label>
+        <label>Green
+        <input type="checkbox" name="color" value="green[]" > 
+        </label>
+       <label>Blue
+        <input type="checkbox" name="color" value="blue[]">   
+        </label>
+    </fieldset>
+      <br /><br />
+      
+    <fieldset>
+      <legend>
+      Does your phone have a broken screen?
+      </legend>  
+        <label>Yes
+          <input type="radio" name="broken-screen" value="yes">
+        </label>
+        <label>No
+          <input type="radio" name="broken-screen" value="no">
+        </label>
+    </fieldset>
+      <br /><br />
+      
+    <fieldset>
+      <legend> 
+      What sound does the a dog make?
+      </legend>
+        <label>Meow
+          <input type="checkbox" name="sound" value="meow[]">
+        </label>
+        <label>Moo
+          <input type="checkbox" name="sound" value="moo[]">
+        </label>
+        <label>Woof
+          <input type="checkbox" name="sound" value="woof[]">
+        </label>
+    </fieldset>
+      <br /><br />
+<!--
+
+      <label for="color">Last Name: </label>
+      <input id="color" type="text" name="last-name">
+-->
+      <input type="submit" value="Apply Now!">
+      <button type="button">Cancel</button>
+    </form>
+    
+  </body>
+</html>
+  
