@@ -46,7 +46,7 @@
       <div class="jumbotron jumbotron-fluid bg-secondary">
         <div class="container ">
           <h2 class="display-3 ">RWD</h2>
-          <p class="lead ">You might ask yourself why RWD? Should I do it just because Google says so? Or because Google threatens to bury your site below mobile friendly sites? <a href="#Newsletter">Sign up for our Newsletter</a></p>
+          <p class="lead ">You might ask yourself why RWD? Should I do it just because Google says so? Or because Google threatens to bury your site below mobile friendly sites? <a href="#Newsletter"><strong>Sign up for our Newsletter</strong></a></p>
         </div>
       </div>
       <!--Jubotron End-->
@@ -73,16 +73,16 @@
       
       <!--Form Section-->
       <div class="container">
-      <h3 id="Newsletter">Signup for our your weekly RWD Fix!</h3>
+      <h3 id="Newsletter">Signup for our Newsletter!</h3>
         <form method="get">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputEmail4">Name</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+                <input required type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
               </div>
               <div class="form-group col-md-6">
                 <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                <input required type="email" class="form-control" id="inputEmail4" placeholder="Email">
               </div>
             </div>
             <div class="form-group">
@@ -100,7 +100,7 @@
                 </select>
               </div>
               <div class="form-group col-md-6">
-                <label for="inputState">Web Experience Level</label>
+                <label for="inputState">Your Web Experience Level?</label>
                 <select id="inputState" class="form-control">
                   <option selected>Choose...</option>
                   <option>I'm a such a Beginner, but I like to learn.</option>
@@ -109,18 +109,24 @@
                 </select>
               </div>
               <div class="form-group col-md-2">
-                <label for="inputAge">Age</label>
-                <input type="number" class="form-control" id="inputAge">
+                <label for="inputAge">Your Age?</label>
+                <input required type="number" class="form-control" id="inputAge">
               </div>
             </div>
-            <div class="form-group col-md-6">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                Would you like to recieve material from out ?
-                </label>
-              </div>
-            </div>
+              <div class="form-group">
+                <fieldset> 
+                  <legend>
+                    Would you like to recieve marketing material?
+                  </legend>
+                    <label>Yes
+                      <input type="radio" name="other-pets" value="yes">
+                    </label>
+                    <label>No
+                    <input type="radio" name="other-pets" value="no">   
+                    </label>
+                </fieldset>
+           
+          </div>
             <button type="submit" class="btn btn-primary">Register</button>
           </form>
         <br />
