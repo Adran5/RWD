@@ -36,10 +36,6 @@
         <a class="nav-link text-white" href="https://adran5.github.io/week9/bootstrap.html" target="_blank">Stranger Things</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
 </nav>
       
@@ -81,42 +77,47 @@
         <form method="get">
             <div class="form-row">
               <div class="form-group col-md-6">
+                <label for="inputEmail4">Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+              </div>
+              <div class="form-group col-md-6">
                 <label for="inputEmail4">Email</label>
                 <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
               </div>
-              <div class="form-group col-md-6">
-                <label for="inputPassword4">Password</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-              </div>
             </div>
             <div class="form-group">
-              <label for="inputAddress">Address</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              <label for="interest">What would you like to learn?</label>
+              <input type="text" class="form-control" id="interest" placeholder="Your interests...">
             </div>
             <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputCity">City</label>
-                <input type="text" class="form-control" id="inputCity">
-              </div>
               <div class="form-group col-md-4">
-                <label for="inputState">State</label>
+                <label for="hearAbout">Where did you hear about us?</label>
+                 <select id="hearAbout" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>On the radio</option>
+                  <option>Web Search</option>
+                  <option>From a Peer</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputState">Web Experience Level</label>
                 <select id="inputState" class="form-control">
                   <option selected>Choose...</option>
-                  <option>WA</option>
-                  <option>CA</option>
-                  <option>NV</option>
+                  <option>I'm a such a Beginner, but I like to learn.</option>
+                  <option>I'm so Intermediate it hurts.</option>
+                  <option>I'm an Master, I could teach you something!</option>
                 </select>
               </div>
               <div class="form-group col-md-2">
-                <label for="inputZip">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
+                <label for="inputAge">Age</label>
+                <input type="number" class="form-control" id="inputAge">
               </div>
             </div>
             <div class="form-group col-md-6">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="gridCheck">
                 <label class="form-check-label" for="gridCheck">
-                material from our partners okay?
+                Would you like to recieve material from out ?
                 </label>
               </div>
             </div>
